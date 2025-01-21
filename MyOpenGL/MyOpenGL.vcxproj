@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LibraryPath>D:\OpenGL\glfw-3.4\include;D:\OpenGL\glfw-3.4\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>D:\OpenGL\glfw-3.4\include;D:\OpenGL\glfw-3.4\lib;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\OpenGL\glfw-3.4\include;D:\OpenGL\glfw-3.4\lib;F:\GitHub\OpenGL_Study\glfw-3.4\lib;F:\GitHub\OpenGL_Study\glfw-3.4\include;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\OpenGL\glfw-3.4\include;D:\OpenGL\glfw-3.4\lib;F:\GitHub\OpenGL_Study\glfw-3.4\lib;F:\GitHub\OpenGL_Study\glfw-3.4\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -134,6 +134,13 @@
   <ItemGroup>
     <ClCompile Include="..\glad\src\glad.c" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fragment_shader.glsl" />
+    <None Include="vertex_shader.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
